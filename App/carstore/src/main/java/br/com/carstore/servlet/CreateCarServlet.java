@@ -18,7 +18,9 @@ public class CreateCarServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String carName = request.getParameter("car-name");
-        
+
+        System.out.println(carName + " Adicionado com Sucesso" );//Impimindo a entrada da pagnia web 
+
         Car car = new Car();//Instanciando a classe Car
         car.setName(carName);//Chamando a função
 
