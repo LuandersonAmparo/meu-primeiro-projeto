@@ -1,15 +1,22 @@
 package br.com.carstore.model;
 
 public class Car {
-    private String name;//declarando uma variavel String nome
+    //private final String ID ;
+    private final String name;//declarando uma variavel String nome constante.
+    private final String color;//declarando a variavel color constante.
 
-    public String getName() {
+    public Car(String name, String color) {//Metodo construtor.
+       // this.ID = ID;
+        this.name = name;
+        this.color = color;
+    }
+
+    public String getColor() {//metodo que pega a cor.
+        return color;
+    }
+
+    public String getName() {//Metodo que pega o nome.
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
 }
